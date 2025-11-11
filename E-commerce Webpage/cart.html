@@ -1,0 +1,75 @@
+<!--Module: CIT2011 - Web Programming 
+     Name: Jodian Walcott
+     Student ID: 2409533--->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisan's Palette - Create Your Signature Style</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+<main>
+    <section id="shopping-cart">
+        <h2>Your Cart: Ready to Personalize</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Sub-Total</th>
+                    <th>Discount</th>
+                    <th>Tax (15%)</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Product">Leather Patch Dye Kit</td>
+                    <td data-label="Price">$34.99</td>
+                    <td data-label="Quantity"><input type="number" value="1" min="1" style="width: 60px;"></td>
+                    <td data-label="Sub-Total">$34.99</td>
+                    <td data-label="Discount">$0.00</td>
+                    <td data-label="Tax (15%)">$5.25</td>
+                    <td data-label="Total"><strong>$40.24</strong></td>
+                </tr>
+                <tr>
+                    <td data-label="Product">Canvas Tote Painting Set</td>
+                    <td data-label="Price">$29.99</td>
+                    <td data-label="Quantity"><input type="number" value="2" min="1" style="width: 60px;"></td>
+                    <td data-label="Sub-Total">$59.98</td>
+                    <td data-label="Discount">$6.00</td>
+                    <td data-label="Tax (15%)">$8.10</td>
+                    <td data-label="Total"><strong>$62.08</strong></td>
+                </tr>
+                <tr>
+                    <td data-label="Product">Wood Burning Starter Kit</td>
+                    <td data-label="Price">$49.99</td>
+                    <td data-label="Quantity"><input type="number" value="1" min="1" style="width: 60px;"></td>
+                    <td data-label="Sub-Total">$49.99</td>
+                    <td data-label="Discount">$0.00</td>
+                    <td data-label="Tax (15%)">$7.50</td>
+                    <td data-label="Total"><strong>$57.49</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-totals" style="text-align: right; margin-top: 30px; font-size: 1.2em;">
+            <p>Cart Sub-Total: <span>$144.96</span></p>
+            <p>Total Discount: <span style="color: red;">-$6.00</span></p>
+            <p>Total Tax (15%): <span>$20.85</span></p>
+            <h3>Grand Total: <strong style="color: var(--accent-color);">$159.81</strong></h3>
+        </div>
+
+        <div class="form-actions" style="justify-content: flex-end;">
+            <a href="index.html" class="btn btn-secondary">Continue Shopping</a>
+            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        </div>
+    </section>
+</main>

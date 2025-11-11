@@ -1,0 +1,65 @@
+<!--Module: CIT2011 - Web Programming 
+     Name: Jodian Walcott
+     Student ID: 2409533--->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisan's Palette - Create Your Signature Style</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <main>
+    <section id="invoice-details">
+        <h2>Order Confirmation & Invoice #AP-2025-101</h2>
+        <h3>Items Purchased</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Sub-Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Product Name">Leather Patch Dye Kit</td>
+                    <td data-label="Unit Price">$34.99</td>
+                    <td data-label="Quantity">1</td>
+                    <td data-label="Sub-Total">$34.99</td>
+                </tr>
+                <tr>
+                    <td data-label="Product Name">Canvas Tote Painting Set</td>
+                    <td data-label="Unit Price">$29.99</td>
+                    <td data-label="Quantity">2</td>
+                    <td data-label="Sub-Total">$59.98</td>
+                </tr>
+                <tr>
+                    <td data-label="Product Name">Wood Burning Starter Kit</td>
+                    <td data-label="Unit Price">$49.99</td>
+                    <td data-label="Quantity">1</td>
+                    <td data-label="Sub-Total">$49.99</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-totals" style="border-top: 3px solid var(--primary-color);">
+            <p>Sub-Total: <span>$144.96</span></p>
+            <p>Discount: <span style="color: red;">-$6.00</span></p>
+            <p>Shipping: <span>$8.00</span></p>
+            <p>Taxes (15%): <span>$20.85</span></p>
+            <h3>Final Total Paid: <strong style="color: var(--accent-color);">$173.81</strong></h3>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button class="btn btn-secondary" onclick="window.print()">Print Invoice</button>
+            <a href="index.html" class="btn">Close</a>
+        </div>
+    </section>
+</main>

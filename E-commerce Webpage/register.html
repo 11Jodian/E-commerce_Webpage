@@ -1,0 +1,54 @@
+<!--Module: CIT2011 - Web Programming 
+     Name: Jodian Walcott
+     Student ID: 2409533--->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Artisan's Palette - Create Your Signature Style</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <main>
+        <section id="registration-section">
+            <h2>New Creator Registration</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal & Contact Information</legend>
+                    <div>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth (DOB):</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Security</legend>
+                    <div>
+                        <label for="reg-username">Username:</label>
+                        <input type="text" id="reg-username" name="reg-username" required>
+                    </div>
+                    <div>
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" name="reg-password" required>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+        </section>
+    </main>
+    </body>
+</html>
